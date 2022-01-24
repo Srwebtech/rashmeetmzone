@@ -1,0 +1,24 @@
+
+.about{
+    text-align: center;
+    font-size: 28px;
+    color:white;
+    background-color:black;
+    font-weight: 800;
+    padding: 25px 0 25px 0;
+    font-family: Montserrat,sans-serif;
+}
+
+.ad{
+    border:2px solid black;
+    height: 400px;
+    margin: 40px;
+}
+.ad h2{
+    padding-top: 40px;
+    padding-left: 15px;
+}
+.ad p{
+    padding-top: 35px;
+    
+}

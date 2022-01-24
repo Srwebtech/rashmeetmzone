@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+span{
+    display: block;
+    font-size: 28px;
+}
+
+body  {
+    font-family: 'Arial' , sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+nav {
+    background: #fff;
+    color: #000;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+    padding-right: 30px;
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 22px;
+    text-decoration: none;
+    font-family:questrial, sans-serif;
+    color: #000;
+    font-size: 1.1rem;
+    
+}
+nav .mainMenu li a:hover {
+    background: #f3f1f0e3;
+    border-radius: 15px;
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-twitter:hover {color: rgb(86, 154, 243);}
+.fa-instagram:hover {color: rgb(255, 0, 191);}
+.fa-youtube:hover {color: rgb(255, 30, 0);}
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgba(68, 61, 55, 0.931);
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+@import url(//db.onlinewebfonts.com/c/f6a8b2423790ec81bbbd18662bbc7f03?family=BelindaW00-Regular);
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+.logo{
+    font-size: 13px;
+    font-family:'Yellowtail', cursive;
+    font-weight: 700;
+    
+  }
+  .logo span{
+    padding-left: 20%;
+    line-height: 50%;
+    width: 250px;
+    font-size: 21px;
+    font-weight: 500;
+    font-family:questrial, sans-serif;
+  }
+
+  
+.about{
+    text-align: center;
+    font-size: 28px;
+    color:white;
+    background-color:black;
+    font-weight: 800;
+    padding: 25px 0 25px 0;
+    font-family: Montserrat,sans-serif;
+}
+
+.service_box{
+    background-color:white;
+    margin: 0px;
+    height: 750px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.service_box img{
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.service_box p{
+    display: flex;
+    margin-top: 120px;
+    padding: 0px 5px 0px 5px;
+    justify-content: center;
+    text-align: center;
+}
+.container1{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px ,1fr));
+    
+
+}
+
+.row01{
+    height: 650px;
+    color:black;
+    
+    position: relative;
+    text-align: center;
+    border: 1px solid black;
+    background-color:white;
+}
+.row02{
+ height: 650px;
+ color:black;
+  position: relative;
+ text-align: center;
+ border:1px solid black;
+ background-color: white;
+}
+.sc {
+ margin: 0px;
+ color: black;
+ font-size: 23px;
+ position:absolute ;
+ top: 35%;
+ left:50%;
+ transform: translate(-50% ,-50%);
+ font-family: questrial,sans-serif;
+
+}
+
+
+@media(max-width:720px)
+{
+  .row01{
+      
+      border: 0px;
+      border-width: 100%;
+      border-bottom: 2px solid black;
+  }
+  .tw{
+      margin-top: 1200px;
+      margin-bottom: 950px;
+      border-width: 100%;
+  }
+  .row02{
+      border: 0px;
+      border-width: 100%;
+      border-bottom: 2px solid black;
+
+    
+  }
+ 
+  
+}
+
+
+
+
+footer{
+    background-color: rgb(204, 197, 197);
+    color:black;
+    font-size: 14px;
+    text-align: center;
+    padding: 25px 0px 15px 0px;
+    margin-bottom: 0px!important;
+}
+footer .media{
+    padding-top: 10px;
+    font-size: 20px;
+    color:black;
+    padding-bottom: 10px;
+}

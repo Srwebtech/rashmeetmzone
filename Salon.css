@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+span{
+    display: block;
+    font-size: 28px;
+}
+
+body  {
+    font-family: 'Arial' , sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+nav {
+    background: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+    padding-right: 30px;
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 22px;
+    text-decoration: none;
+    font-family:questrial, sans-serif;
+    color: #000;
+    font-size: 1.1rem;
+    
+}
+nav .mainMenu li a:hover {
+    background: #f3f1f0e3;
+    border-radius: 15px;
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-twitter:hover {color: rgb(86, 154, 243);}
+.fa-instagram:hover {color: rgb(255, 0, 191);}
+.fa-youtube:hover {color: rgb(255, 30, 0);}
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgba(68, 61, 55, 0.931);
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+@import url(//db.onlinewebfonts.com/c/f6a8b2423790ec81bbbd18662bbc7f03?family=BelindaW00-Regular);
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+.logo{
+    font-size: 13px;
+    font-family:'Yellowtail', cursive;
+    font-weight: 700;
+    
+  }
+  .logo span{
+    padding-left: 20%;
+    line-height: 50%;
+    width: 250px;
+    font-size: 21px;
+    font-weight: 500;
+    font-family:questrial, sans-serif;
+  }
+
+
+  .makeup{
+    font-size: 22px;
+    padding-top: 25px;
+    
+}
+
+
+.half-half-image-text .row{
+    margin-bottom: 10px;
+}
+  
+.half-half-image-text {
+    padding: 50px 0px;
+  }
+  .half-half-image-text h1 {
+    color: #800000;
+  }
+  .half-half-image-text .content {
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 15px 0px;
+  }
+  .half-half-image-text .content p {
+    font-size: 15px;
+  }
+  .half-half-image-text .img {
+    width: 90%;
+    min-height: 320px;
+    height: 100%;
+     
+    border-radius: 10px;
+  }
+  .salons h3{
+      text-align: center;
+  }
+  .salons .row{
+      margin: 15px 10px 15px 10pxs;
+  }
+.salons .row{
+    border:2px solid black;
+    padding: 30px 10px 30px 10px;
+    height: 100%;
+}
+  @media(max-width:700px){
+      .salons .row:nth-child(odd){
+          flex-direction: column-reverse;
+      }
+  }
+
+@media(min-width:1000px){
+#list p{
+    padding-right: 180px;
+}
+}
+
+footer{
+    background-color: rgb(204, 197, 197);
+    color:black;
+    font-size: 14px;
+    text-align: center;
+    padding: 25px 0px 15px 0px;
+    margin-bottom: 0px!important;
+}
+footer .media{
+    padding-top: 10px;
+    font-size: 20px;
+    color:black;
+    padding-bottom: 10px;
+}
